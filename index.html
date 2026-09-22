@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>منیراحمد خیشکیوال لمیټيډ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+    background:#f3f7f2;
+    color:#222;
+    direction:rtl;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#145a1b,#238b2d);
+    color:white;
+    padding:18px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:500px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    background:
+    radial-gradient(circle at 20% 30%,rgba(76,175,80,0.18),transparent 30%),
+    radial-gradient(circle at 80% 70%,rgba(249,168,37,0.13),transparent 28%),
+    linear-gradient(135deg,#eef8ed,#ffffff);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:rgba(35,139,45,0.06);
+    top:-150px;
+    right:-100px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(249,168,37,0.06);
+    bottom:-150px;
+    left:-100px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#e7f3e7;
+    color:#176522;
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    font-size:16px;
+    font-weight:600;
+
+    margin-bottom:18px;
+
+    border:1px solid #d5e8d5;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#176522;
+
+    margin:0 0 15px;
+
+    font-weight:700;
+
+    line-height:1.4;
+}
+
+.hero p{
+    font-size:22px;
+    color:#555;
+
+    margin:0 auto;
+
+    max-width:750px;
+
+    line-height:1.9;
+}
+
+.hero-buttons{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-button{
+    display:inline-block;
+
+    background:#f9a825;
+    color:white;
+
+    padding:13px 30px;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.hero-button:hover{
+    background:#e89508;
+    transform:translateY(-2px);
+}
+
+.hero-button.secondary{
+    background:#1b5e20;
+}
+
+.hero-button.secondary:hover{
+    background:#267d2e;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+    padding:70px 40px;
+    text-align:center;
+    background:white;
+}
+
+.products h2{
+    font-size:38px;
+    color:#176522;
+
+    margin:0 0 35px;
+
+    font-weight:700;
+}
+
+
+/* SEARCH */
+
+.product-tools{
+    max-width:950px;
+    margin:0 auto 45px;
+}
+
+.search-box{
+    width:100%;
+    max-width:650px;
+
+    height:55px;
+
+    border:2px solid #dcebdc;
+
+    border-radius:12px;
+
+    padding:0 20px;
+
+    font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+
+    font-size:18px;
+
+    outline:none;
+
+    background:#f8fbf8;
+
+    transition:0.3s;
+}
+
+.search-box:focus{
+    border-color:#238b2d;
+
+    background:white;
+
+    box-shadow:0 0 0 4px rgba(35,139,45,0.08);
+}
+
+
+/* CATEGORY BUTTONS */
+
+.category-buttons{
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+}
+
+.category-button{
+    border:1px solid #cfe0cf;
+
+    background:#f3f8f3;
+
+    color:#176522;
+
+    padding:10px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.category-button:hover{
+    background:#e4f1e4;
+}
+
+.category-button.active{
+    background:#1b5e20;
+
+    color:white;
+
+    border-color:#1b5e20;
+}
+
+
+/* PRODUCT CONTAINER */
+
+.product-container{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card{
+    width:310px;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:16px;
+
+    box-shadow:0 6px 22px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 28px rgba(0,0,0,0.16);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image{
+    width:100%;
+
+    height:240px;
+
+    background:linear-gradient(135deg,#eef5ee,#f9fbf9);
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    border:1px solid #e2ebe2;
+}
+
+.product-placeholder{
+    text-align:center;
+    color:#6b806b;
+}
+
+.product-placeholder .icon{
+    font-size:55px;
+
+    display:block;
+
+    margin-bottom:5px;
+}
+
+.product-placeholder span{
+    font-size:16px;
+}
+
+
+/* PRODUCT TEXT */
+
+.product-card h3{
+    font-size:22px;
+
+    color:#222;
+
+    margin:20px 0 10px;
+
+    direction:ltr;
+
+    text-align:center;
+}
+
+.product-category{
+    display:inline-block;
+
+    background:#eaf5ea;
+
+    color:#176522;
+
+    padding:5px 13px;
+
+    border-radius:20px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+}
+
+.product-card p{
+    color:#666;
+
+    font-size:17px;
+
+    margin:5px 0;
+
+    line-height:1.8;
+}
+
+
+/* PRODUCT BUTTON */
+
+.product-button{
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#1b5e20;
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:7px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.product-button:hover{
+    background:#267d2e;
+}
+
+
+/* INFO BOX */
+
+.info-box{
+    display:none;
+
+    margin-top:18px;
+
+    padding:18px;
+
+    background:#f1f7f1;
+
+    border-right:4px solid #1b5e20;
+
+    border-radius:10px;
+
+    text-align:right;
+}
+
+.info-box h4{
+    color:#176522;
+
+    font-size:19px;
+
+    margin:0 0 8px;
+}
+
+.info-box p{
+    font-size:16px;
+
+    color:#444;
+
+    line-height:1.9;
+}
+
+
+/* NO RESULTS */
+
+.no-results{
+    display:none;
+
+    width:100%;
+
+    padding:35px;
+
+    color:#777;
+
+    font-size:20px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    padding:80px 30px;
+
+    background:#f5f9f4;
+
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+
+    color:#176522;
+
+    margin:0 0 15px;
+}
+
+.services-subtitle{
+    color:#666;
+
+    font-size:19px;
+
+    margin:0 0 40px;
+}
+
+.services-container{
+    max-width:1150px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:250px;
+
+    min-height:220px;
+
+    background:white;
+
+    padding:28px 20px;
+
+    border-radius:16px;
+
+    box-shadow:0 6px 22px rgba(0,0,0,0.09);
+
+    border:1px solid #e1ebe1;
+
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-7px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,0.13);
+}
+
+.service-icon{
+    font-size:48px;
+
+    margin-bottom:12px;
+}
+
+.service-card h3{
+    color:#176522;
+
+    font-size:22px;
+
+    margin:8px 0 12px;
+}
+
+.service-card p{
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin:0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    padding:80px 30px;
+
+    background:linear-gradient(135deg,#eef8ed,#ffffff);
+
+    text-align:center;
+}
+
+.about-container{
+    max-width:950px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.10);
+}
+
+.about h2{
+    font-size:38px;
+
+    color:#176522;
+
+    margin-top:0;
+
+    margin-bottom:25px;
+}
+
+.about h3{
+    font-size:27px;
+
+    color:#1b5e20;
+
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:20px;
+
+    line-height:2;
+
+    color:#555;
+
+    margin:12px 0;
+}
+
+.about-features{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+}
+
+.about-feature{
+    background:#f3f8f3;
+
+    padding:15px 25px;
+
+    border-radius:10px;
+
+    color:#176522;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border:1px solid #dcebdc;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    padding:80px 25px;
+
+    background:#fff;
+
+    text-align:center;
+}
+
+.contact h2{
+    font-size:38px;
+
+    color:#176522;
+
+    margin-top:0;
+
+    margin-bottom:40px;
+}
+
+.contact-container{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:320px;
+
+    min-height:210px;
+
+    padding:25px 20px;
+
+    background:#f4f8f4;
+
+    border-radius:16px;
+
+    border:1px solid #e0e9e0;
+
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.contact-icon{
+    font-size:40px;
+
+    margin-bottom:10px;
+}
+
+.contact-card h3{
+    color:#176522;
+
+    font-size:23px;
+
+    margin:5px 0 15px;
+}
+
+.contact-card p{
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin:5px 0;
+}
+
+.contact-card a{
+    color:#176522;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:#f9a825;
+}
+
+.whatsapp-button{
+    display:inline-block;
+
+    margin-top:12px;
+
+    background:#1b5e20;
+
+    color:white!important;
+
+    padding:10px 22px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:0.3s;
+}
+
+.whatsapp-button:hover{
+    background:#267d2e;
+
+    color:white!important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:linear-gradient(135deg,#0d3f12,#176522);
+
+    color:white;
+
+    padding-top:55px;
+
+    margin-top:0;
+}
+
+.footer-container{
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:0 25px 45px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    flex:1;
+
+    min-width:240px;
+}
+
+.footer-box h3{
+    font-size:23px;
+
+    color:#ffd54f;
+
+    margin-top:0;
+
+    margin-bottom:18px;
+}
+
+.footer-box p{
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#e5e5e5;
+}
+
+.footer-box a{
+    display:block;
+
+    color:#eee;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    margin:9px 0;
+
+    transition:0.3s;
+}
+
+.footer-box a:hover{
+    color:#ffd54f;
+}
+
+.footer-whatsapp{
+    display:inline-block!important;
+
+    background:#25D366;
+
+    color:white!important;
+
+    padding:9px 20px;
+
+    border-radius:7px;
+
+    margin-top:12px!important;
+
+    font-weight:600!important;
+}
+
+.footer-whatsapp:hover{
+    background:#20b957;
+
+    color:white!important;
+}
+
+.footer-bottom{
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,0.15);
+
+    padding:18px 15px;
+
+    color:#ddd;
+
+    font-size:15px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    header{
+        padding:15px 20px;
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .logo{
+        font-size:24px;
+
+        text-align:center;
+    }
+
+    nav{
+        gap:10px;
+
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:16px;
+    }
+
+
+    .hero{
+        min-height:450px;
+
+        padding:60px 15px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:19px;
+    }
+
+    .hero-badge{
+        font-size:14px;
+    }
+
+
+    .products{
+        padding:50px 15px;
+    }
+
+    .products h2{
+        font-size:32px;
+    }
+
+    .product-tools{
+        margin-bottom:35px;
+    }
+
+    .search-box{
+        height:52px;
+
+        font-size:17px;
+    }
+
+    .category-button{
+        font-size:16px;
+
+        padding:9px 16px;
+    }
+
+    .product-card{
+        width:100%;
+
+        max-width:330px;
+    }
+
+
+    .services{
+        padding:55px 15px;
+    }
+
+    .services h2{
+        font-size:32px;
+    }
+
+    .service-card{
+        width:100%;
+
+        max-width:340px;
+    }
+
+
+    .about{
+        padding:50px 15px;
+    }
+
+    .about-container{
+        padding:25px 18px;
+    }
+
+    .about h2{
+        font-size:32px;
+    }
+
+    .about h3{
+        font-size:23px;
+    }
+
+    .about p{
+        font-size:18px;
+
+        line-height:1.9;
+    }
+
+
+    .contact{
+        padding:55px 15px;
+    }
+
+    .contact h2{
+        font-size:32px;
+    }
+
+    .contact-card{
+        width:100%;
+
+        max-width:360px;
+    }
+
+
+    .footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        text-align:center;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:30px;
+    }
+
+    .footer-box{
+        width:100%;
+
+        max-width:350px;
+    }
+
+    .footer-box a{
+        text-align:center;
+    }
+
+    .footer-bottom{
+        font-size:14px;
+
+        line-height:1.8;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="logo">
+منیراحمد خیشکیوال لمیټيډ
+</div>
+
+<nav>
+
+<a href="#">
+کور
+</a>
+
+<a href="#products">
+محصولات
+</a>
+
+<a href="#services">
+خدمتونه
+</a>
+
+<a href="#about">
+زموږ په اړه
+</a>
+
+<a href="#contact">
+اړیکه
+</a>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+مسلکي زراعتي محصولات
+</div>
+
+<h1>
+منیراحمد خیشکیوال لمیټيډ
+</h1>
+
+<p>
+د کرنې لپاره مسلکي او باکیفیته زراعتي محصولات،
+د نباتاتو ساتنې او د زیان رسوونکو حشراتو او واښو د کنټرول لپاره.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="hero-button">
+زموږ محصولات وګورئ
+</a>
+
+<a href="#contact" class="hero-button secondary">
+اړیکه ونیسئ
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section class="products" id="products">
+
+<h2>
+زموږ محصولات
+</h2>
+
+
+<div class="product-tools">
+
+<input
+type="text"
+id="productSearch"
+class="search-box"
+placeholder="د محصول نوم ولټوئ..."
+autocomplete="off"
+>
+
+
+<div class="category-buttons">
+
+<button
+class="category-button active"
+data-category="all">
+
+ټول محصولات
+
+</button>
+
+
+<button
+class="category-button"
+data-category="insecticide">
+
+Insecticides
+
+</button>
+
+
+<button
+class="category-button"
+data-category="herbicide">
+
+Herbicides
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product-container" id="productContainer">
+
+
+<!-- CHLORPYRIFOS -->
+
+<div
+class="product-card"
+data-category="insecticide"
+data-name="chlorpyrifos">
+
+<div class="product-image">
+
+<div class="product-placeholder">
+
+<span class="icon">
+🌿
+</span>
+
+<span>
+Product Image
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Chlorpyrifos
+</h3>
+
+
+<span class="product-category">
+Insecticide
+</span>
+
+
+<p>
+د زیان رسوونکو حشراتو د کنټرول لپاره.
+</p>
+
+
+<button
+class="product-button"
+onclick="toggleInfo('info1')">
+
+نور معلومات
+
+</button>
+
+
+<div class="info-box" id="info1">
+
+<h4>
+Chlorpyrifos
+</h4>
+
+<p>
+Chlorpyrifos د نباتاتو د زیان رسوونکو حشراتو د کنټرول لپاره کارول کېږي.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- IMIDACLOPRID -->
+
+<div
+class="product-card"
+data-category="insecticide"
+data-name="imidacloprid">
+
+<div class="product-image">
+
+<div class="product-placeholder">
+
+<span class="icon">
+🌱
+</span>
+
+<span>
+Product Image
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Imidacloprid
+</h3>
+
+
+<span class="product-category">
+Insecticide
+</span>
+
+
+<p>
+د زیان رسوونکو حشراتو د کنټرول لپاره.
+</p>
+
+
+<button
+class="product-button"
+onclick="toggleInfo('info2')">
+
+نور معلومات
+
+</button>
+
+
+<div class="info-box" id="info2">
+
+<h4>
+Imidacloprid
+</h4>
+
+<p>
+Imidacloprid د نباتاتو د زیان رسوونکو حشراتو د کنټرول لپاره کارول کېږي.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PENDIMETHALIN -->
+
+<div
+class="product-card"
+data-category="herbicide"
+data-name="pendimethalin 33 ec">
+
+<div class="product-image">
+
+<div class="product-placeholder">
+
+<span class="icon">
+🌾
+</span>
+
+<span>
+Product Image
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Pendimethalin 33% EC
+</h3>
+
+
+<span class="product-category">
+Herbicide
+</span>
+
+
+<p>
+د زیان رسوونکو واښو د کنټرول لپاره.
+</p>
+
+
+<button
+class="product-button"
+onclick="toggleInfo('info3')">
+
+نور معلومات
+
+</button>
+
+
+<div class="info-box" id="info3">
+
+<h4>
+Pendimethalin 33% EC
+</h4>
+
+<p>
+Pendimethalin د کرنیزو ځمکو د زیان رسوونکو واښو د کنټرول لپاره کارول کېږي.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- HALOXYFOP -->
+
+<div
+class="product-card"
+data-category="herbicide"
+data-name="haloxyfop-r-methyl">
+
+<div class="product-image">
+
+<div class="product-placeholder">
+
+<span class="icon">
+🌿
+</span>
+
+<span>
+Product Image
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Haloxyfop-R-methyl
+</h3>
+
+
+<span class="product-category">
+Herbicide
+</span>
+
+
+<p>
+د زیان رسوونکو واښو د کنټرول لپاره.
+</p>
+
+
+<button
+class="product-button"
+onclick="toggleInfo('info4')">
+
+نور معلومات
+
+</button>
+
+
+<div class="info-box" id="info4">
+
+<h4>
+Haloxyfop-R-methyl
+</h4>
+
+<p>
+Haloxyfop-R-methyl د زیان رسوونکو واښو د کنټرول لپاره کارول کېږي.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- LAMBDA -->
+
+<div
+class="product-card"
+data-category="insecticide"
+data-name="lambda-cyhalothrin 2.5 ec">
+
+<div class="product-image">
+
+<div class="product-placeholder">
+
+<span class="icon">
+🌱
+</span>
+
+<span>
+Product Image
+</span>
+
+</div>
+
+</div>
+
+
+<h3>
+Lambda-cyhalothrin 2.5% EC
+</h3>
+
+
+<span class="product-category">
+Insecticide
+</span>
+
+
+<p>
+د زیان رسوونکو حشراتو د کنټرول لپاره.
+</p>
+
+
+<button
+class="product-button"
+onclick="toggleInfo('info5')">
+
+نور معلومات
+
+</button>
+
+
+<div class="info-box" id="info5">
+
+<h4>
+Lambda-cyhalothrin 2.5% EC
+</h4>
+
+<p>
+Lambda-cyhalothrin د نباتاتو د زیان رسوونکو حشراتو د کنټرول لپاره کارول کېږي.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="no-results" id="noResults">
+محصول پیدا نه شو.
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+<h2>
+زموږ خدمتونه
+</h2>
+
+<p class="services-subtitle">
+د کرنې او نباتاتو د ساتنې په برخه کې زموږ مهم خدمات
+</p>
+
+
+<div class="services-container">
+
+
+<div class="service-card">
+
+<div class="service-icon">
+🌱
+</div>
+
+<h3>
+د نباتاتو ساتنه
+</h3>
+
+<p>
+د نباتاتو د سالمې ودې او ساتنې لپاره د زراعتي محصولاتو وړاندې کول.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">
+🐛
+</div>
+
+<h3>
+د حشراتو کنټرول
+</h3>
+
+<p>
+د زیان رسوونکو حشراتو د کنټرول لپاره د مناسب زراعتي محصولاتو وړاندې کول.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">
+🌾
+</div>
+
+<h3>
+د واښو کنټرول
+</h3>
+
+<p>
+د زیان رسوونکو واښو د کنټرول لپاره د زراعتي محصولاتو وړاندې کول.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">
+📦
+</div>
+
+<h3>
+زراعتي محصولات
+</h3>
+
+<p>
+د کرنې لپاره د باکیفیته زراعتي محصولاتو عرضه او وړاندې کول.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="about-container">
+
+<h2>
+زموږ په اړه
+</h2>
+
+<h3>
+منیراحمد خیشکیوال لمیټيډ
+</h3>
+
+<p>
+منیراحمد خیشکیوال لمیټيډ د کرنې لپاره د باکیفیته زراعتي محصولاتو د وړاندې کولو په برخه کې فعالیت کوي.
+</p>
+
+<p>
+موږ هڅه کوو چې بزګرانو او کرنیزو مسلکي کسانو ته داسې محصولات وړاندې کړو چې د نباتاتو د ساتنې، د زیان رسوونکو حشراتو او واښو د کنټرول او د کرنیزو چارو د ښه والي لپاره مناسب وي.
+</p>
+
+<p>
+زموږ موخه د کیفیت، باور او مسلکيتوب پر بنسټ د خپلو پیرودونکو اړتیاوو ته مناسب زراعتي محصولات وړاندې کول دي.
+</p>
+
+
+<div class="about-features">
+
+<div class="about-feature">
+کیفیت
+</div>
+
+<div class="about-feature">
+باور
+</div>
+
+<div class="about-feature">
+مسلکيتوب
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<h2>
+اړیکه
+</h2>
+
+
+<div class="contact-container">
+
+
+<div class="contact-card">
+
+<div class="contact-icon">
+📍
+</div>
+
+<h3>
+زموږ پته
+</h3>
+
+<p>
+برودروازې، د کابل دروازې مدینه مارکیټ ته مخامخ، حاجي ظاهر مارکیټ
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<div class="contact-icon">
+📍
+</div>
+
+<h3>
+دوهمه پته
+</h3>
+
+<p>
+حضرت جي بابا، برودروازې، کندهار، افغانستان
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<div class="contact-icon">
+📞
+</div>
+
+<h3>
+ټلیفون
+</h3>
+
+<p>
+د اړیکې لپاره:
+</p>
+
+<p>
+
+<a href="tel:+93707000984">
++93 70 700 0984
+</a>
+
+</p>
+
+
+<a
+class="whatsapp-button"
+href="https://wa.me/93707000984"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<div class="contact-icon">
+✉️
+</div>
+
+<h3>
+ایمیل
+</h3>
+
+<p>
+زموږ سره د ایمیل له لارې اړیکه ونیسئ:
+</p>
+
+<p>
+
+<a href="mailto:muniragro2005@gmail.com">
+muniragro2005@gmail.com
+</a>
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+<div class="footer-box">
+
+<h3>
+منیراحمد خیشکیوال لمیټيډ
+</h3>
+
+<p>
+د کرنې لپاره مسلکي او باکیفیته زراعتي محصولات.
+</p>
+
+<p>
+کیفیت، باور او مسلکيتوب.
+</p>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>
+مهم لینکونه
+</h3>
+
+<a href="#">
+کور
+</a>
+
+<a href="#products">
+محصولات
+</a>
+
+<a href="#services">
+خدمتونه
+</a>
+
+<a href="#about">
+زموږ په اړه
+</a>
+
+<a href="#contact">
+اړیکه
+</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>
+اړیکه
+</h3>
+
+<p>
+
+📞
+
+<a href="tel:+93707000984">
++93 70 700 0984
+</a>
+
+</p>
+
+
+<p>
+
+✉️
+
+<a href="mailto:muniragro2005@gmail.com">
+muniragro2005@gmail.com
+</a>
+
+</p>
+
+
+<a
+class="footer-whatsapp"
+href="https://wa.me/93707000984"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 منیراحمد خیشکیوال لمیټيډ — ټول حقوق خوندي دي.
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+function toggleInfo(id){
+
+    const box = document.getElementById(id);
+
+    if(box.style.display === "block"){
+
+        box.style.display = "none";
+
+    }else{
+
+        box.style.display = "block";
+
+    }
+
+}
+
+
+
+/* =========================
+   SEARCH + CATEGORY
+========================= */
+
+const searchInput =
+document.getElementById("productSearch");
+
+const categoryButtons =
+document.querySelectorAll(".category-button");
+
+const productCards =
+document.querySelectorAll(".product-card");
+
+const noResults =
+document.getElementById("noResults");
+
+let activeCategory = "all";
+
+
+
+function filterProducts(){
+
+    const searchText =
+    searchInput.value.toLowerCase().trim();
+
+    let visibleProducts = 0;
+
+
+    productCards.forEach(function(card){
+
+        const productName =
+        card.getAttribute("data-name").toLowerCase();
+
+        const productCategory =
+        card.getAttribute("data-category");
+
+
+        const matchesSearch =
+        productName.includes(searchText);
+
+
+        const matchesCategory =
+        activeCategory === "all" ||
+        productCategory === activeCategory;
+
+
+        if(matchesSearch && matchesCategory){
+
+            card.style.display = "block";
+
+            visibleProducts++;
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    if(visibleProducts === 0){
+
+        noResults.style.display = "block";
+
+    }else{
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+
+/* SEARCH */
+
+searchInput.addEventListener("input",function(){
+
+    filterProducts();
+
+});
+
+
+
+/* CATEGORY BUTTONS */
+
+categoryButtons.forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+        categoryButtons.forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+        button.classList.add("active");
+
+
+        activeCategory =
+        button.getAttribute("data-category");
+
+
+        filterProducts();
+
+    });
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
